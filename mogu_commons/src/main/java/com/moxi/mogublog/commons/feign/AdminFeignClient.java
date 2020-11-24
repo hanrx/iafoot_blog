@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * 后台服务feign远程调用
  *
- * @author 陌溪
+ * @author iAfoot
  * @date 2020年1月21日22:19:10
  */
 

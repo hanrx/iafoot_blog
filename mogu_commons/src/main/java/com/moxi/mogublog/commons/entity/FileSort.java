@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 文件分类
  *
- * @author 陌溪
+ * @author iAfoot
  * @since 2018-09-17
  */
 @TableName("t_file_sort")

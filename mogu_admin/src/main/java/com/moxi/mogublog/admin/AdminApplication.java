@@ -40,12 +40,14 @@ public class AdminApplication {
 
     /**
      * 设置时区
+     * @PostConstruct 执行顺序： 构造方法 > @Autowired > @PostConstruct
      */
     @PostConstruct
     void setDefaultTimezone() {
         TimeZone.setDefault(TimeZone.getTimeZone("Asia/Shanghai"));
     }
 
+    //Spring内部的一种配置方式
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {

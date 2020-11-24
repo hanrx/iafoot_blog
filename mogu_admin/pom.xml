@@ -97,7 +97,7 @@
     </dependencies>
 
 
-    <!--spring boot打包的话需要指定一个唯一的入门-->
+    <!--spring boot打包的话需要指定一个唯一的入口-->
     <build>
         <plugins>
             <plugin>

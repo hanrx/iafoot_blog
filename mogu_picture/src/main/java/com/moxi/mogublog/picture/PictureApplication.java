@@ -11,12 +11,12 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.oas.annotations.EnableOpenApi;
 
-
-@EnableTransactionManagement
+//图片服务，用于图片上传和下载
+@EnableTransactionManagement// 开启注解事务管理
 @SpringBootApplication
-@EnableOpenApi
-@EnableDiscoveryClient
-@EnableFeignClients("com.moxi.mogublog.commons.feign")
+@EnableOpenApi//swagger3
+@EnableDiscoveryClient//实现服务注册与发现
+@EnableFeignClients("com.moxi.mogublog.commons.feign")//启用feign客户端，远程调用
 @ComponentScan(basePackages = {
         "com.moxi.mogublog.commons.config.feign",
         "com.moxi.mogublog.commons.handler",
@@ -29,26 +29,7 @@ public class PictureApplication {
         SpringApplication.run(PictureApplication.class, args);
     }
 
-//    private CorsConfiguration buildConfig() {
-//        CorsConfiguration corsConfiguration = new CorsConfiguration();
-//        corsConfiguration.addAllowedOrigin("*");
-//        corsConfiguration.addAllowedHeader("*");
-//        corsConfiguration.addAllowedMethod("*");
-//        return corsConfiguration;
-//    }
-//
-//    /**
-//     * 跨域过滤器
-//     *
-//     * @return
-//     */
-//    @Bean
-//    public CorsFilter corsFilter() {
-//        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-//        source.registerCorsConfiguration("/**", buildConfig());
-//        return new CorsFilter(source);
-//    }
-
+    //Spring内部的一种配置方式
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
