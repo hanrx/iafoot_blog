@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * 自定义拦截器
  *
- * @author: 陌溪
+ * @author: iAfoot
  * @create: 2020-06-14-21:55
  */
 @Configuration
@@ -27,6 +27,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
      *
      * @param registry
      */
+    //ResourceHandlerRegistry：配置静态资源服务
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**").addResourceLocations(

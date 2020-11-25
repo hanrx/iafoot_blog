@@ -5,7 +5,7 @@ import com.moxi.mougblog.base.global.BaseSysConf;
 /**
  * 系统常量
  *
- * @author xuzhixiang
+ * @author iAfoot
  */
 public final class SysConf extends BaseSysConf {
 

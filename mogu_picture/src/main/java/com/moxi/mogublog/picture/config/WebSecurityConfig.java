@@ -11,8 +11,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
  * SpringSecurity配置文件
  */
 @Configuration
-@EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableWebSecurity//启用Web安全
+@EnableGlobalMethodSecurity(prePostEnabled = true)//控制层的方法 访问权限控制
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override

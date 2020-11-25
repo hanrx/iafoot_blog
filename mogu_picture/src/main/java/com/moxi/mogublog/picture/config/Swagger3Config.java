@@ -13,7 +13,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 /**
  * Swagger配置文件
  *
- * @author 陌溪
+ * @author iAfoot
  * @date 2020年9月7日18:09:35
  */
 @Configuration
@@ -30,7 +30,7 @@ public class Swagger3Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("蘑菇博客图片接口文档")
+                .title("iAfoot博客图片接口文档")
                 .description("简单优雅的restful风格")
                 .version("1.0")
                 .build();

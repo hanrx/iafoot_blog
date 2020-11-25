@@ -17,6 +17,7 @@ import java.util.Map;
 @Configuration
 public class DruidConfig {
 
+    //告诉SpringBoot将本类中的所有属性和配置文件中相关的配置进行绑定；prefix = "xxx"：配置文件中哪个下面的所有属性进行一一映射
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
     public DataSource druid() {

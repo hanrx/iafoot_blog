@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Mybatis-plus插件配置
  *
- * @author 陌溪
+ * @author iAfoot
  * @date 2020年10月4日10:49:23
  */
 @Configuration
@@ -41,6 +41,10 @@ public class MybatisPlusConfig {
         return paginationInterceptor;
     }
 
+    /**
+     * mybatis-plus 主键生成
+     * 文档：http://mp.baomidou.com
+     */
     @Bean
     public H2KeyGenerator getH2KeyGenerator() {
         return new H2KeyGenerator();

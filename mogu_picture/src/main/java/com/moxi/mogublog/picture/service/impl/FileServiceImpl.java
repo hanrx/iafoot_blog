@@ -39,7 +39,7 @@ import java.util.*;
  * @author 陌溪
  * @since 2018-09-17
  */
-@Slf4j
+@Slf4j//如果不想每次都写private  final Logger logger = LoggerFactory.getLogger(当前类名.class); 可以用注解@Slf4j;
 @Service
 public class FileServiceImpl extends SuperServiceImpl<FileMapper, File> implements FileService {
 
