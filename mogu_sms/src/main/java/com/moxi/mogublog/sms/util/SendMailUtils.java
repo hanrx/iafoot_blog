@@ -11,7 +11,7 @@ import javax.mail.internet.MimeMessage;
 /**
  * 邮件发送工具类
  *
- * @author 陌溪
+ * @author iAfoot
  * @date 2018年10月20日下午3:18:25
  */
 @Slf4j
@@ -38,7 +38,7 @@ public class SendMailUtils {
             //multipart:true
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
 
-            helper.setSubject("蘑菇博客");
+            helper.setSubject("iAfoot博客");
 
             helper.setText(text, true);
             //邮件接收人
